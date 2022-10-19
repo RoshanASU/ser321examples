@@ -38,14 +38,20 @@ public class Fraction {
    }
 
    public static void main (String args[]) {
-      try {
+      try{
+         //Get arguments from command line and parse them
+         //Gradle file passes default values of 1 and 3.
+         int pNum = Integer.parseInt(arg[0]);
+         int pDenom - Integer.parseInt(arg[1]);
+
+
          // create a new instance
          // Fraction *frac = [[Fraction alloc] init];
          Fraction frac = new Fraction();
 
          // set the values
-         frac.setNumerator(1);
-         frac.setDenominator(3);
+         frac.setNumerator(pNum);
+         frac.setDenominator(pDenom);
 
          // print it
          System.out.print("The fraction is: ");
